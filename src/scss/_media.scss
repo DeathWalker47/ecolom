@@ -1,0 +1,129 @@
+@media (max-width: 1440px) {
+  .hero__left {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .circle-play {
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+  .hero__title,
+  .hero__links {
+    margin-bottom: 30px;
+  }
+  .hero__content {
+    padding-bottom: 0;
+  }
+}
+
+@media (max-width: 1340px) {
+  .header__top {
+    justify-content: center;
+  }
+  .header__left,
+  .header__search,
+  .header__calc {
+    margin-right: auto;
+  }
+  .header__right {
+    gap: 30px;
+  }
+  .nav__list {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 1100px) {
+  .header__links {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .hero__image {
+    display: none;
+  }
+  .hero__left {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .header__calc {
+    display: none;
+  }
+  .social {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header__top {
+    position: relative;
+    z-index: 3;
+  }
+  .burger {
+    display: block;
+  }
+  .menu {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateY(-120%);
+    transition: 0.3s;
+    background: var(--ligth-gray);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .menu--active {
+    transform: translateY(0);
+  }
+  .nav__list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav__link {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+  .search {
+    display: none;
+  }
+  .circle-play {
+    display: none;
+  }
+  .hero {
+    min-height: auto;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+  }
+  .hero__content {
+    padding-top: 60px;
+  }
+  .hero__title,
+  .complex-content__title {
+    font-size: 36px;
+  }
+  .info-list {
+    margin-bottom: 60px;
+  }
+  .info-list__item {
+    padding: 15px;
+  }
+  .info-list__title {
+    font-size: 16px;
+  }
+  .complex-content__descr {
+    gap: 20px;
+  }
+}

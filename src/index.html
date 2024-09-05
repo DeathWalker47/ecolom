@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru" class="page">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link href="./favicon.png" rel="icon" type="image/png" />
+    <title>Эколом</title>
+    <script defer src="js/main.js"></script>
+  </head>
+  <body class="page__body">
+    <div class="wrapper">
+      @include('parts/header.html')
+      <main class="main">
+        @include('parts/hero.html') @include('parts/complex.html')
+      </main>
+      <div class="graph-modal">
+        <div
+          class="graph-modal__container"
+          role="dialog"
+          aria-modal="true"
+          data-graph-target="call-me"
+        >
+          <button
+            class="btn-reset js-modal-close graph-modal__close"
+            aria-label="Закрыть модальное окно"
+          ></button>
+          <div class="graph-modal__content">
+            <div class="modal-call">
+              <h2 class="modal-call__title">
+                Какое-то модальное окно с формой для перезвона
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div
+          class="graph-modal__container"
+          role="dialog"
+          aria-modal="true"
+          data-graph-target="calc"
+        >
+          <button
+            class="btn-reset js-modal-close graph-modal__close"
+            aria-label="Закрыть модальное окно"
+          ></button>
+          <div class="graph-modal__content">
+            <div class="modal-call">
+              <h2 class="modal-call__title">Калькулятор</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
